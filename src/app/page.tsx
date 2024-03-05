@@ -1,13 +1,17 @@
 import React from "react";
 import { ConfigCard } from "@/components/configCard";
 import { configuration } from "@/lib/configurations";
+import { ThemeToggle } from "@/components/themeToggle";
 
 export default function Home() {
   return (
     <main className="flex flex-col p-24">
-      <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl mb-12">
-        VIM Cheatsheet
-      </h1>
+      <div className="flex flex-row justify-between">
+        <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl mb-12">
+          VIM Cheatsheet
+        </h1>
+        <ThemeToggle />
+      </div>
       {configuration.map((config) => (
         <React.Fragment key={config.sectionTitle}>
           <h2 className="scroll-m-20 pb-2 text-3xl font-semibold tracking-tight first:mt-0">
