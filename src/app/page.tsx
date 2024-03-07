@@ -5,7 +5,7 @@ import { ThemeToggle } from "@/components/themeToggle";
 
 export default function Home() {
   return (
-    <main className="flex flex-col p-24">
+    <main className="flex flex-col p-6 md:p-20">
       <div className="flex flex-row justify-between">
         <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl mb-12">
           VIM Cheatsheet
