@@ -1,7 +1,7 @@
 import React from "react";
-import { ConfigCard } from "@/components/configCard";
+import { ConfigCard } from "@/components/config-card";
 import { configuration } from "@/lib/configurations";
-import { ThemeToggle } from "@/components/themeToggle";
+import { ThemeToggle } from "@/components/theme-toggle";
 
 export default function Home() {
   return (
